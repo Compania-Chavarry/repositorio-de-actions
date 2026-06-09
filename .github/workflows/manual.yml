@@ -1,0 +1,14 @@
+name: Workflow Manual
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  primer_job:
+    name: Primer Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Primer step
+        run: echo "Hello, world! "
