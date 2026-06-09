@@ -12,3 +12,16 @@ jobs:
     steps:
       - name: Primer step
         run: echo "Hello, world! "
+
+  segundo_job:
+    name: Segundo Job
+    runs-on: ubuntu-latest
+    needs: [primer_job]
+
+    steps:
+      - name: Primer step
+        run: echo "Hello, world! - Desde el segundo Job "
+
+      - name: Segundo step
+        run: echo "Hello, world! - Otro step más"
+
